@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Channel</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="top-menu">
+      <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand btn btn-primary text-white ms-2"
+              href="index.html"
+              >myVideo</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"
+                    >Recommended Videos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="history.html">History</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    >Sign In</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button
+                  onclick="window.open('search.html' + location.search)"
+                  class="btn btn-outline-primary"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--Modal-->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Sign In</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label"
+                      >Password:</label
+                    >
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="#" style="text-decoration: none">Create Account</a>
+                <a href="#" class="mx-auto" style="text-decoration: none"
+                  >Forgot My Password</a
+                >
+                <button type="button" class="btn btn-primary">Enter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <section class="channel-page">
+      <div class="container-fluid" style="padding: 0">
+        <div class="row">
+          <div class="banner position-relative">
+            <img class="img-fluid" src="img/h-channel.jpg" alt="" />
+            <div
+              class="social position-absolute p-1 mb-2 bg-light text-dark"
+              style="bottom: 18px; left: 25px"
+            >
+              Contact
+              <a href="#" title="Twitter">
+                <img src="img/icons/twitter.png" alt="" />
+              </a>
+              <a href="#" title="Facebook">
+                <img src="img/icons/facebook.png" alt="" />
+              </a>
+              <a href="#" title="Twitter">
+                <img src="img/icons/hsoub-web.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="position-absolute p-1 mb-2 bg-light text-dark"
+              style="bottom: 18px; right: 25px"
+            >
+              2500 Subscribers
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="channel.html">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Playlists</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="video-section bg-white p-2 mt-3">
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-sm-6">
+            <video
+              src="video/hsoub.mp4"
+              controls
+              autoplay
+              muted
+              loop
+              poster="img/thumbnail/frontend.jpg"
+              class="w-100"
+            ></video>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-block">
+              <a href="watch.html" style="text-decoration: none"
+                ><h4 class="card-title">Front-End Development Roadmap</h4></a
+              >
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <small class="text-muted">
+                <i class="fa-solid fa-film"></i> <span>3K Views</span>
+                <i class="fa-solid fa-clock"></i> <span>3 min</span>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main">
+      <br /><br /><br />
+      <div class="row">
+        <div class="content">
+          <h4 class="my-5 text-center">New Uploads</h4>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-deck">
+              <div class="card p-1 mb-4">
+                <a
+                  href="watch.html"
+                  style="text-decoration: none; color: black"
+                >
+                  <img
+                    class="card-img-top"
+                    src="img/thumbnail/ruby.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      Full Course in Back End development with Ruby
+                    </p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i> <span>7K Views</span>
+                    <i class="fa-solid fa-clock"></i> <span>120 min</span>
+                  </small>
+                </div>
+                <a href="channel.html" class="channel-img">
+                  <img
+                    src="img/ch-logo.png"
+                    class="rounded-circle my-2 mx-2"
+                    width="30"
+                  />
+                  <span class="card-text">Hsoub Academy</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-deck">
+              <div class="card p-1 mb-4">
+                <a
+                  href="watch.html"
+                  style="text-decoration: none; color: black"
+                >
+                  <img
+                    class="card-img-top"
+                    src="img/thumbnail/php.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Back End development with PHP</p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i> <span>13K Views</span>
+                    <i class="fa-solid fa-clock"></i> <span>155 min</span>
+                  </small>
+                </div>
+                <a href="channel.html" class="channel-img">
+                  <img
+                    src="img/ch-logo.png"
+                    class="rounded-circle my-2 mx-2"
+                    width="30"
+                  />
+                  <span class="card-text">Hsoub Academy</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-deck">
+              <div class="card p-1 mb-4">
+                <a
+                  href="watch.html"
+                  style="text-decoration: none; color: black"
+                >
+                  <img
+                    class="card-img-top"
+                    src="img/thumbnail/ruby1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Intermidiate Ruby</p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i> <span>600 Views</span>
+                    <i class="fa-solid fa-clock"></i> <span>90 min</span>
+                  </small>
+                </div>
+                <a href="channel.html" class="channel-img">
+                  <img
+                    src="img/ch-logo.png"
+                    class="rounded-circle my-2 mx-2"
+                    width="30"
+                  />
+                  <span class="card-text">Hsoub Academy</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card-deck">
+              <div class="card p-1 mb-4">
+                <a
+                  href="watch.html"
+                  style="text-decoration: none; color: black"
+                >
+                  <img
+                    class="card-img-top"
+                    src="img/thumbnail/frontend.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Front-End development Roadmap</p>
+                  </div>
+                </a>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i> <span>250K Views</span>
+                    <i class="fa-solid fa-clock"></i> <span>7 min</span>
+                  </small>
+                </div>
+                <a href="channel.html" class="channel-img">
+                  <img
+                    src="img/ch-logo.png"
+                    class="rounded-circle my-2 mx-2"
+                    width="30"
+                  />
+                  <span class="card-text">Hsoub Academy</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br />
+    <footer>
+      <nav class="navbar navbar-dark bg-primary">
+        <h4 style="color: white" class="mx-auto pt-2">myVideo</h4>
+      </nav>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1030357b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
